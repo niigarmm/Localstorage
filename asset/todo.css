@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Moirai+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+3D&family=Rubik+Distressed&family=Sacramento&family=Satisfy&family=Sofia&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik Distressed", system-ui;
+    font-family: "Roboto", sans-serif;
+}
+
+.todo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(48deg, rgba(0, 0, 0, 1) 56%, rgba(68, 68, 68, 1) 76%, rgba(123, 133, 171, 1) 100%);
+
+    .todo-cart {
+        width: 80%;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.879);
+        border-radius: 20px;
+        height: 76vh;
+        display: flex;
+
+        .left-part {
+            height: 76vh;
+            width: 30%;
+            border-radius: 17px 0 0 20px;
+            background-color: rgba(255, 255, 255, 0.769);
+            padding: 20px;
+
+            .user-part {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.543);
+                padding-bottom: 30px;
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    color: rgba(0, 0, 0, 0.669);
+                }
+
+                img {
+                    width: 50px;
+                    margin-right: 10px;
+                    background-color: rgba(0, 0, 0, 0.669);
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+            }
+
+            .section {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                margin-left: 10px;
+                gap: 40px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+
+                    i {
+                        font-size: 30px;
+                        color: rgba(0, 0, 0, 0.669);
+                    }
+
+                    p {
+                        color: rgba(0, 0, 0, 0.669);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .right-part {
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            overflow-y: auto;
+            width: 100%;
+            padding-left: 90px;
+
+            img {
+                width: 300px;
+                /* border: 1px solid white; */
+                position: absolute;
+                top: 150px;
+                left: 0;
+                border-right:1px solid rgba(255, 255, 255, 0.587);
+            }
+
+            .result {
+                position: fixed;
+                bottom: 20px;
+                border-radius: 14px;
+                height: 40px;
+                margin-left: 40px;
+                background-color: rgba(213, 208, 208, 0.779);
+                width: 450px;
+                padding-inline: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: rgb(255, 255, 255);
+
+
+                button {
+                    height: 30px;
+                    width: 70px;
+                    background-color: #cbd5fd;
+                    color: white;
+                    border-radius: 10px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+            }
+
+            h1 {
+                font-weight: 900;
+                font-size: 30px;
+            }
+
+            form {
+                display: flex;
+                margin-top: 20px;
+                flex-direction: column;
+                overflow-y: auto;
+
+                .input-div {
+                    display: flex;
+
+                    input {
+                        height: 40px;
+                        width: 73%;
+                        outline: none;
+                        padding-left: 10px;
+                        border: 1px solid rgb(255, 255, 255);
+                        background-color: rgb(215, 213, 213);
+                        border-radius: 14px;
+                    }
+
+                    input::placeholder {
+                        color: rgb(158, 158, 158);
+                    }
+
+                    .add {
+                        width: 15%;
+                        height: 40px;
+                        margin-left: 10px;
+                        background-color: #cbd5fd;
+                        color: white;
+                        font-weight: 900;
+                        font-size: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 14px;
+                    }
+                }
+                ul{
+                    margin-top: 25px;
+                }
+                li {
+                    background-color: rgba(255, 255, 255, 0.694);
+                    width: 56%;
+                    border-radius: 14px;
+                    height: 40px;
+                    font-size: 13px;
+                    list-style: none;
+                    margin-block: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 10px;
+                    align-items: center;
+                    cursor: pointer;
+                    margin-left: 230px;
+
+                    .remove {
+                        height: 40px;
+                        width: 15%;
+                        background-color: rgba(252, 50, 50, 0.822);
+                        border: none;
+                        border-radius: 0 14px 14px 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+
+                    .fa-trash {
+                        color: white;
+                    }
+                }
+
+                li:hover .remove {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+}
