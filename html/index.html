@@ -7,17 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="../asset/homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="main-div">
+        <button class="mode-toggle"><i class="fa-solid fa-sun "></i></button>
+        <button class="lang-toggle"><i class="fa-solid fa-language light-lang"></i></button>
         <div class="right-part">
-            <img src="./image_processing20191018-26745-1vb5jmd.gif" alt="">
+            <img src="./image_processing20191018-26745-1vb5jmd.gif" alt="" class="gif">
         </div>
         <div class="left-part">
-            <h1 class="animate__animated animate__flipInX">A simple to do list
+            <h1 class="animate__animated animate__flipInX title" >A simple to do list
                 to manage it all</h1>
-            <p class="animate__animated animate__flipInX">Easily manage your personal tasks, family projects, and
+            <p class="animate__animated animate__flipInX parg">Easily manage your personal tasks, family projects, and
                 team’s work all in one place. Trusted by +40M people</p>
             <nav class="animate__animated animate__flipInX">
                 <ul>
@@ -29,13 +34,14 @@
                 </ul>
             </nav>
         </div>
-
-
     </div>
 
 
-
-
+    <script src="../script/home.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -7,38 +7,48 @@
     <title>Document</title>
     <link rel="stylesheet" href="../asset/todo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 
 <body>
     <div class="todo">
+        <button class="mode-toggle"><i class="fa-solid fa-sun"></i></button>
+        <button class="lang-toggle"><i class="fa-solid fa-language light-lang"></i></button>
         <div class="todo-cart">
             <div class="left-part">
                 <div class="user-part">
-                    <img src="./icons8-user-30.png" alt="">
-                    <p>UserName:</p>
+                    <div>
+                        <img src="./icons8-user-30.png" alt="">
+                        <p class="parg">UserName:</p>
+                    </div>
+                    <!-- <div>
+                        <p class="ad"></p>
+                    </div> -->
+ 
                 </div>
                 <div class="section">
                     <div>
                         <i class="fa-regular fa-pen-to-square"></i>
-                        <p>Today's task</p>
+                        <p class="parg">Today's task</p>
                     </div>
                     <div>
                         <i class="fa-solid fa-list-check"></i>
-                        <p>Schedule Task</p>
+                        <p class="parg">Schedule Task</p>
                     </div>
                     <div>
                         <i class="fa-solid fa-gear"></i>
-                        <p>Setting</p>
+                        <p class="parg">Setting</p>
                     </div>
                 </div>
             </div>
             <div class="right-part">
-                <img src="./image_processing20191018-26745-1vb5jmd.gif" alt="">
+                <img src="./image_processing20191018-26745-1vb5jmd.gif" alt="" class="bird">
                 <h1 style="color: white;">Today Main Focus</h1>
                 <form action="">
                     <div class="input-div">
-                        <input type="text" placeholder="Add your new todo">
+                        <input type="text" placeholder="Add your new todo" class="inp">
                         <button class="add">+</button>
                     </div>
                     <ul></ul>
@@ -49,7 +59,6 @@
                 </div>
             </div>
         </div>
-
 
 
         <script src="../script/script.js"></script>

@@ -6,63 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../asset/register.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 
 <body>
     <div class="register ">
-        <div class="register-card animate__animated animate__bounce">
+        <button class="mode-toggle"><i class="fa-solid fa-sun"></i></button>
+        <button class="lang-toggle"><i class="fa-solid fa-language light-lang"></i></button>
+        <div class="register-card">
             <div class="left-part">
-                <h1>Todo App</h1>
-                <p>Register using your social media account</p>
+                <h1 class="animate__animated animate__lightSpeedInLeft">Todo App</h1>
+                <p class="parg animate__animated animate__lightSpeedInLeft">2</p>
                 <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f icon"></i> </a>
-                        Facebook
+                    <li class="animate__animated animate__lightSpeedInLeft">
+                        <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+                        <p class="parg">Facebook</p>
                     </li>
-                    <li>
+                    <li class="animate__animated animate__lightSpeedInLeft">
                         <a href="#"><i class="fab fa-twitter icon"></i></a>
-                        Twitter
+                        <p class="parg">Twitter</p>
                     </li>
-                    <li>
+                    <li class="animate__animated animate__lightSpeedInLeft">
                         <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
-                        Linkedin
+                        <p class="parg">Linkedin</p>
                     </li>
-                    <li>
+                    <li class="animate__animated animate__lightSpeedInLeft">
                         <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
-                        Google Plus
+                        <p class="parg">Google Plus</p>
                     </li>
                 </ul>
 
             </div>
             <div class="right-part">
-                <h1>Register To Your Account</h1>
-                <p>Do you have account? <a href="../html/login.html">Sign In</a></p>
-                 <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email address">
-                <input type="password" placeholder="Password" name="" id="">
+                <h1 class="animate__animated animate__lightSpeedInLeft">Register To Your Account</h1>
+                <div class="forgey">
+                    <p class="parg animate__animated animate__lightSpeedInLeft">Do you have account? </p>
+                    <a href="../html/login.html" class="page">Sign In</a>
+                </div>
+
+                <input type="text" placeholder="Name" class="name animate__animated animate__lightSpeedInLeft">
+                <input type="text" placeholder="Email address"
+                    class="email animate__animated animate__lightSpeedInLeft">
+                <input type="password" placeholder="Password" name="" id=""
+                    class="pass animate__animated animate__lightSpeedInLeft">
                 <div class="bottom-part">
                     <div>
                         <input type="checkbox" name="" id="">
-                        Remember Me
+                      <p class="parg">Remember Me</p>  
                     </div>
-                    <a href="">Forgot Password?</a>
+                    <a href="" class="page">Forgot Password?</a>
                 </div>
-                <nav>
+                <nav class="animate__animated animate__lightSpeedInLeft">
                     <ul>
                         <li>
-                            <a href="./login.html">Register
-                                <span></span><span></span><span></span><span></span>
-                            </a>
+                            <button class="check  ">
+                                <a href="./login.html" class="page">Register
+                                    <span></span><span></span><span></span><span></span>
+                                </a>
+                            </button>
+
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </div>
+
+
+    <script src="../script/register.js"></script>
 </body>
 
 </html>
