@@ -15,6 +15,7 @@ const title = document.querySelector("h1");
 const parg = document.querySelectorAll(".parg");
 const button = document.querySelector(".clear");
 
+
 const TODO_LIST_KEY = "myTodoList";
 document.addEventListener("DOMContentLoaded", () => {
   const savedTask = JSON.parse(localStorage.getItem(TODO_LIST_KEY)) || [];
@@ -78,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clear.onclick = () => {
       ul.innerHTML = "";
       localStorage.setItem("nigar", "salam");
-      localStorage.clear("myTodoList");
+      localStorage.removeItem("myTodoList");
       updateTaskCount();
       var audio = new Audio("zapsplat_cartoon_pop_bubble_etc_001_45556.mp3");
       audio.play();
@@ -119,8 +120,8 @@ form.onsubmit = (e) => {
     // let count = ul.querySelectorAll("li").length;
     input.value = "";
     // result.innerHTML = `You have ${count} task`;
-    // var audio = new Audio("zapsplat_cartoon_pop_bubble_etc_001_45556.mp3");
-    // audio.play();
+    var audio = new Audio("zapsplat_cartoon_pop_bubble_etc_001_45556.mp3");
+    audio.play();
     updateTaskCount();
     edit.onclick = () => {
       const currentText = li.textContent;
