@@ -489,3 +489,17 @@
         }
     }
 }
+@media(max-width:350px){
+    .main-div{
+        padding-top: 60px;
+        .right-part{
+            height: 100px !important;
+        }
+        .left-part{
+            width: 100% !important; 
+            .title{
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
