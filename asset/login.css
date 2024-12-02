@@ -597,11 +597,15 @@
     }
 }
 @media(max-width:452px){
+    .dark-mode-div,.register{
+        height: 180vh !important;
+    }
     .register-card{
         flex-direction: column;
         width: 90% !important;
+        height: 150vh !important;
         .left-part{
-            height: 80vh !important;
+            height: 70vh !important;
             width: 100% !important;
             h1{
                 font-size: 120% !important;
@@ -610,7 +614,7 @@
                 font-size: 70% !important;
             }
             ul{
-                top: 25% !important;
+                top: 23% !important;
                 margin-left: 40px;
                 li{
                     width: 120% !important;
