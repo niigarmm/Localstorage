@@ -79,8 +79,8 @@
     background: linear-gradient(48deg, rgba(0, 0, 0, 1) 56%, rgba(68, 68, 68, 1) 76%, rgba(123, 133, 171, 1) 100%);
 
     .register-card {
-        height: 400px;
-        width: 800px;
+        height: 70vh;
+        width: 60%;
         background-color: rgba(255, 255, 255, 0.078);
         backdrop-filter: blur(10px);
         border-radius: 10px;
@@ -89,8 +89,8 @@
 
         .left-part {
             background-color: rgba(0, 0, 0, 0.527);
-            width: 400px;
-            height: 500px;
+            width: 50%;
+            height: 70vh;
             display: flex;
             flex-direction: column;
             color: white;
@@ -98,7 +98,7 @@
             padding-top: 60px;
 
             h1 {
-                font-size: 30px;
+                font-size: 140%;
             }
 
             p {
@@ -198,7 +198,7 @@
             color: white;
 
             h1 {
-                font-size: 25px;
+                font-size: 140%;
             }
 
             p {
@@ -541,4 +541,103 @@
 
     }
 
+}
+@media(max-width:1171px){
+    .register-card{
+        width: 90% !important; 
+    }
+}
+@media(max-width:810px){
+    .register,.dark-mode-div{
+        height: 220vh !important;
+    }
+    .register-card{
+        height: 170vh !important;
+        flex-direction: column;
+
+        width: 400px !important;
+        .left-part{
+            height: 80vh !important;
+            width: 100% !important;
+            border-radius: 14px 14px 0 0 !important;
+            ul{
+                top: 25% !important;
+                margin-left: 40px;
+            }
+        }
+        .right-part{
+            padding-inline: 10px !important;
+        }
+    }
+}
+@media(max-width:580px){
+    .register-card{
+        flex-direction: column;
+        width: 90% !important;
+        .left-part{
+            height: 80vh !important;
+            width: 100% !important;
+            h1{
+                font-size: 120% !important;
+            }
+            ul{
+                top: 25% !important;
+                margin-left: 40px;
+                li{
+                    width: 120% !important;
+                }
+                a{
+                    width: 30% !important;
+                }
+            }
+        }
+        .right-part{
+            padding-inline: 10px !important;
+        }
+    }
+}
+@media(max-width:452px){
+    .register-card{
+        flex-direction: column;
+        width: 90% !important;
+        .left-part{
+            height: 80vh !important;
+            width: 100% !important;
+            h1{
+                font-size: 120% !important;
+            }
+            p{
+                font-size: 70% !important;
+            }
+            ul{
+                top: 25% !important;
+                margin-left: 40px;
+                li{
+                    width: 120% !important;
+                }
+                a{
+                    width: 30% !important;
+                    height: 40px !important;
+                }
+            }
+        }
+        .right-part{
+            padding-inline: 10px !important;
+            h1{
+                font-size: 110% !important;
+            }
+            p{
+                font-size: 60% !important;
+            }
+            a{
+                font-size: 70% !important;
+            }
+        }
+    }
+    
+}
+@media(max-width:380px){
+    .register-card{
+        width: 90% !important;
+    }
 }
