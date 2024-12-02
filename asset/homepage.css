@@ -402,6 +402,7 @@
         flex-direction: column !important;
         background: rgb(203, 213, 253);
         background: linear-gradient(23deg, rgba(203, 213, 253, 1) 0%, rgba(0, 0, 0, 1) 44%, rgba(0, 0, 0, 1) 61%);
+        padding-top: 100px;
 
         .right-part {
             height: 200px !important;
@@ -489,9 +490,9 @@
         }
     }
 }
-@media(max-width:350px){
+@media(max-width:380px){
     .main-div{
-        padding-top: 60px;
+        padding-top: 100px;
         .right-part{
             height: 100px !important;
         }
