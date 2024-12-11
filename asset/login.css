@@ -549,15 +549,15 @@
 }
 @media(max-width:810px){
     .register,.dark-mode-div{
-        height: 110vh !important;
+        height: auto !important;
+        padding-block: 90px;
     }
     .register-card{
-        height: 80vh !important;
+        height: 170vh !important;
         flex-direction: column;
-
         width: 400px !important;
         .left-part{
-            height: 40vh !important;
+            height: 80vh !important;
             width: 100% !important;
             border-radius: 14px 14px 0 0 !important;
             ul{
@@ -572,11 +572,11 @@
 }
 @media(max-width:580px){
     .register-card{
-        height: 90vh;
+        height: 80vh;
         flex-direction: column;
         width: 90% !important;
         .left-part{
-            height: 40vh !important;
+            height: 80vh !important;
             width: 100% !important;
             h1{
                 font-size: 120% !important;
@@ -599,14 +599,15 @@
 }
 @media(max-width:452px){
     .dark-mode-div,.register{
-        height: 100vh !important;
+        height: auto !important;
+        padding-block: 90px !important;
     }
     .register-card{
         flex-direction: column;
         width: 90% !important;
-        height: 80vh !important;
+        height: auto !important;
         .left-part{
-            height: 40vh !important;
+            height: 80vh !important;
             width: 100% !important;
             h1{
                 font-size: 120% !important;
@@ -628,6 +629,7 @@
         }
         .right-part{
             padding-inline: 10px !important;
+            padding-block: 40px !important;
             h1{
                 font-size: 110% !important;
             }
