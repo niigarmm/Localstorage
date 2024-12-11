@@ -590,13 +590,13 @@
     }
     
 }
-@media(max-width:810px){
+@media(max-width:850px){
     .register,.dark-mode-div{
         height: auto !important;
         padding-block: 90px;
     }
     .register-card{
-        height: 170vh !important;
+        height: 180vh !important;
         flex-direction: column;
         width: 400px !important;
         .left-part{
@@ -610,6 +610,9 @@
         }
         .right-part{
             padding-inline: 10px !important;
+            li{
+                width: 100% !important;
+            }
         }
     }
 }
