@@ -582,3 +582,112 @@
 
     }
 }
+@media(max-width:1171px){
+    .register,.dark-mode-div{
+        .register-card{
+            width: 90% !important; 
+        }
+    }
+    
+}
+@media(max-width:810px){
+    .register,.dark-mode-div{
+        height: auto !important;
+        padding-block: 90px;
+    }
+    .register-card{
+        height: 170vh !important;
+        flex-direction: column;
+        width: 400px !important;
+        .left-part{
+            height: 80vh !important;
+            width: 100% !important;
+            border-radius: 14px 14px 0 0 !important;
+            ul{
+                top: 25% !important;
+                margin-left: 40px;
+            }
+        }
+        .right-part{
+            padding-inline: 10px !important;
+        }
+    }
+}
+@media(max-width:580px){
+    .register-card{
+        height: 80vh;
+        flex-direction: column;
+        width: 90% !important;
+        .left-part{
+            height: 80vh !important;
+            width: 100% !important;
+            h1{
+                font-size: 120% !important;
+            }
+            ul{
+                top: 25% !important;
+                margin-left: 40px;
+                li{
+                    width: 120% !important;
+                }
+                a{
+                    width: 30% !important;
+                }
+            }
+        }
+        .right-part{
+            padding-inline: 10px !important;
+        }
+    }
+}
+@media(max-width:452px){
+    .dark-mode-div,.register{
+        height: auto !important;
+        padding-block: 90px !important;
+    }
+    .register-card{
+        flex-direction: column;
+        width: 90% !important;
+        height: auto !important;
+        .left-part{
+            height: 80vh !important;
+            width: 100% !important;
+            h1{
+                font-size: 120% !important;
+            }
+            p{
+                font-size: 70% !important;
+            }
+            ul{
+                top: 23% !important;
+                margin-left: 40px;
+                li{
+                    width: 120% !important;
+                }
+                a{
+                    width: 30% !important;
+                    height: 40px !important;
+                }
+            }
+        }
+        .right-part{
+            padding-inline: 10px !important;
+            padding-block: 40px !important;
+            h1{
+                font-size: 110% !important;
+            }
+            p{
+                font-size: 60% !important;
+            }
+            a{
+                font-size: 70% !important;
+            }
+        }
+    }
+    
+}
+@media(max-width:380px){
+    .register-card{
+        width: 90% !important;
+    }
+}

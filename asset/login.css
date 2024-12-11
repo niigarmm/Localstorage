@@ -543,9 +543,12 @@
 
 }
 @media(max-width:1171px){
-    .register-card{
-        width: 90% !important; 
+    .register,.dark-mode-div{
+        .register-card{
+            width: 90% !important; 
+        }
     }
+    
 }
 @media(max-width:810px){
     .register,.dark-mode-div{
